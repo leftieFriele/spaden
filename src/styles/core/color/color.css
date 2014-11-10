@@ -39,6 +39,7 @@
 .blue-xlt, a.blue-xlt{color:#e5f5ff}
 .blue-xxlt, a.blue-xxlt{color:#f2faff}
 .blue-greyish, a.blue-greyish{color:#e9eff5}
+.blue-greyish-lt{color:#F4F7FB} 
 .bg-blue-dk{background-color:#0077ee !important} /* Knapper */ 
 .bg-blue{background-color:#0099ff !important} /* Knapper */ 
 .bg-blue-lt{background-color:#4cb7ff !important} /* Menylinje, (implementert med 0099ff med alpha 0.7) */
@@ -46,6 +47,7 @@
 .bg-blue-xlt{background-color:#e5f5ff !important}
 .bg-blue-xxlt{background-color:#f2faff !important}
 .bg-blue-greyish{background-color:#e9eff5 !important} /* Finn main-bg */
+.bg-blue-greyish-lt{background-color:#F4F7FB !important} /* Finn hover-bg */
 
 
 /* Sekundærfarger */

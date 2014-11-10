@@ -152,8 +152,3 @@
 }
 /* test only, have to be rewritten */
 .profile .img{ width:65px;height:65px  }
-.profile .nerd-wrapper{width:45px;height:45px;margin:10px;overflow:hidden;}
-.profile img{ margin-top:-7px}
-
-.profile.active .nerd-wrapper{width:65px;height:65px;margin:0px; }
-.profile.active img{ margin-top:-12px}

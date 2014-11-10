@@ -13,6 +13,7 @@
 .mod.transparent > .inner { background:transparent; }
 .mod.transparent .hd,
 .mod.transparent .ft { border-radius: 2px; }
+
 .mod.listing hr{margin:0;}
 .mod.listing hr:last-child{display:none;}
 .mod.listing.shadow > .inner {
