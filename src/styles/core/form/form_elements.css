@@ -364,22 +364,12 @@ button:disabled:hover {
   input[type=reset],
   button,
   a.icon,
-  a.button{
+  a.button,
+  button:disabled,
+  button:disabled:hover{
     font-size: 14px;
     padding: 6px 10px;
   }
-  input.primary,
-  button.primary,
-  a.icon.primary,
-  a.button.primary,
-  input.order,
-  button.order,
-  a.icon.order,
-  a.button.order{
-    padding:7px 10px;
-  }
-
-
 }
 
 
