@@ -22,8 +22,6 @@ img { max-width: 100%; }
 .no-print,
 .invisible,
 .toggle-grid,
-.feedbackHint,
-.advertbuttons, .user-object-toolbar,
 .broadcast,
 hr,
 .button,
@@ -33,15 +31,9 @@ button,
 .banners,
 .webads,
 .webad,
-.heliosPosition,
 .advertisement,
-#sentinel,
-.feedbackHint,
-.feedbackContainer,
-.feedbackWrapper,
 .fb-like,
 #moreimages,
-.mupf-menu,
 .ribbon-content,
 .topbar-nav-svg-caption {
     display: none!important;
@@ -50,17 +42,6 @@ button,
 .print-only {
     display: block!important;
 }
-
-.line, .lastUnit { overflow: visible !important; }
-.line:after, .lastUnit:after { clear: both; }
-
-/* Unhacks */
-ul.bullets li:before, .object-description ul li:before { display: none; }
-ul.bullets li, .object-description ul li { list-style: square outside!important; position: static; }
-
-/* Etc */
-.mod.shadow > .inner { box-shadow: none; }
-.nav-level1 a { border: 0!important; }
 
 /* Grid */
 .r-cols1to2 > .unit { width: 50%; }
@@ -83,6 +64,8 @@ ul.bullets li, .object-description ul li { list-style: square outside!important;
 .r-size4of5 {width:80%;}
 .r-size1of6 {width:16.6666666%;}
 .r-size5of6 {width:83.3333333%;}
+.line, .lastUnit { overflow: visible !important; }
+.line:after, .lastUnit:after { clear: both; }
 
 /* Spacing */
 h1, h2, h3, h4, h5, h6, ul, ol, dl, p,blockquote, .media {margin:5px 10px;}
@@ -99,3 +82,11 @@ h4,.h4,.t4{font-size:14px;font-style:normal;line-height: 1.25em;}
 .d1, .smalltext {font-size:10px;}
 .d2, .microtext {font-size:9px;}
 .largetext { font-size: 14px; }
+
+/* Unhacks */
+ul.bullets li:before, .object-description ul li:before { display: none; }
+ul.bullets li, .object-description ul li { list-style: square outside!important; position: static; }
+
+/* Etc */
+.mod.shadow > .inner { box-shadow: none; }
+.nav-level1 a { border: 0!important; }
