@@ -24,7 +24,11 @@ dt, dd { margin: 0 20px; }
 .r-pbl, .r-pvl, .r-pal {padding-bottom:20px !important;}
 
 /* Grid */
-.hideht768{display:none}
+.hide-ht480,
+.hide-ht600,
+.hideht768,
+.hide-ht768,
+.hide-ht900{display:none}
 .r-cols1to2 .unit { width: 50%; }
 .r-cols1to3 .unit,
 .r-cols2to3 .unit { width: 33.3333%; }
