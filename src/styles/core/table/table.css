@@ -9,24 +9,24 @@ table {
   border-collapse: collapse;
 }
 
-table th, table td {
+th, td {
   padding: 10px 10px 9px 0;
   line-height: 1.5em;
   text-align: left;
 }
-table th {
+th {
   padding-top: 9px;
   vertical-align: middle;
 }
-table td {
+td {
   vertical-align: top;
   border-top: 1px solid #cdd3d8;
 }
-table thead th {
+thead th {
     background-color: #9BA8B1;
     color:#fff;
 }
-table tbody th {
+tbody th {
   border-top: 1px solid #cdd3d8;
   vertical-align: top;
 }
