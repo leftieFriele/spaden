@@ -186,3 +186,21 @@
         padding-bottom: 30px; /* Avoid the issue of toolbars showing up when clicking too close to the bottom toolbar on iOS 7. */
     }
 }
+
+.skiplink {
+    /* This has opacity 0 instead of display: none to avoid layout when it's focused */
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background: #fff;
+    color: #000;
+    padding: 5px 10px;
+    z-index: -1;
+}
+
+.skiplink:focus {
+    opacity: 1;
+    z-index: 5;
+}
+

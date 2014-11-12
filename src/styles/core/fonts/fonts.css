@@ -92,8 +92,6 @@ a:hover > .neutral { text-decoration: underline; }
 
 :focus { outline: none; }
 
-.skiplink { position: absolute; left: -999em; top: 0; }
-
 /* navigational links, visited on */
 a.userhistory:visited, .userhistory a:visited { color:#9ba8b1; }
 a.userhistory:visited:hover, .userhistory a:visited:hover {   }
