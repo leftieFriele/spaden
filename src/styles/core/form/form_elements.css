@@ -113,6 +113,7 @@ input[type="search"]:focus {
 select[multiple] {
     height: inherit;
     background-color: #ffffff;
+    overflow: auto;
 }
 
 textarea {
