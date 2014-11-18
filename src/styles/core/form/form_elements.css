@@ -242,8 +242,8 @@ input.order,
 button.order,
 a.icon.order,
 a.button.order{
-    padding:11px 14px;
-    border:0;
+    padding:10px 12px;
+    border:1px solid #e68007;
     background: #fb8b08;
     background-image: -moz-linear-gradient(top, #fb8b08, #e68007);
     background-image: -webkit-linear-gradient(top, #fb8b08, #e68007);
@@ -268,8 +268,8 @@ input.primary,
 button.primary,
 a.icon.primary,
 a.button.primary{
-    padding:11px 14px;
-    border:0;
+    padding:10px 12px;
+    border:1px solid #007cf0;
     background: #0095fd;
     background-image: -moz-linear-gradient(top, #0095fd, #007cf0);
     background-image: -webkit-linear-gradient(top, #0095fd, #007cf0);
@@ -299,8 +299,8 @@ input:disabled[type=button]:hover,
 input:disabled[type=submit]:hover,
 input:disabled[type=reset]:hover,
 button:disabled:hover {
-    padding:11px 14px;
-    border:0;
+    padding:10px 12px;
+    border:1px solid #e2e6e9;
     background: #e2e6e9;
     background-image: -moz-linear-gradient(top, #e2e6e9, #dce0e4);
     background-image: -webkit-linear-gradient(top, #e2e6e9, #dce0e4);
@@ -358,6 +358,14 @@ button:disabled:hover {
   input[type=submit],
   input[type=reset],
   button,
+  input.order,
+  button.order,
+  a.icon.order,
+  a.button.order,
+  input.primary,
+  button.primary,
+  a.icon.primary,
+  a.button.primary,
   a.icon,
   a.button,
   button:disabled,
