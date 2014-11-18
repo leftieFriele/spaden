@@ -33,9 +33,9 @@ body, html {
 @media screen and (min-width:768px) {
     .page{max-width:990px;margin-left: 10px;}
     .container { max-width: 1000px; margin: 0 auto; }
-	.container.kindawide { max-width: 1230px; }
+	.container.kindawide { max-width: 1240px; }
 	.container.prettywide { max-width: 1470px; }
 
-	.skyskraper-left { position: absolute; left: -250px; top: 0; }
-	.skyskraper-right { position: absolute; right: -230px; top: 0; }
+	.skyskraper-left { position: absolute; left: -240px; top: 0; }
+	.skyskraper-right { position: absolute; right: -240px; top: 0; }
 }
