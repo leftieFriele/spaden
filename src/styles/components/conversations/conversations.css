@@ -81,8 +81,6 @@
 .finnbox-replymessage textarea {
     width: 100%;
     max-width: 480px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
     padding: 0;
 }
 
