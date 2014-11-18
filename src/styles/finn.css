@@ -355,8 +355,8 @@
 }
 
 /* m.banner-stuff */
-.stickycontainer                                {background: none repeat scroll 0 0 #fff;  text-align: center; box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.30); -webkit-box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.30);}
+.stickycontainer                                {background: none repeat scroll 0 0 #fff;  text-align: center; box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.30); }
 .stickycontainer.goodsticky                     {position: fixed; left: 0; right: 0; bottom: 0; }
 .stickycontainer.badsticky                      {position: absolute; left: 0; right: 0;}
 .stickycontainer > button                       {position: absolute; top: 1px; right: 1px; background-color: transparent;}
-.stickycontainer .dismiss-sticky                {position: absolute; top: 3px; right: 5px; color: #fff; width: 22px; height: 22px; background: #000; border: 2px solid #fff; -webkit-border-radius:1em; border-radius: 1em; -webkit-appearance: none; box-shadow: 0 0 4px #000000; }
+.stickycontainer .dismiss-sticky                {position: absolute; top: 3px; right: 5px; color: #fff; width: 22px; height: 22px; background: #000; border: 2px solid #fff; border-radius: 1em; -webkit-appearance: none; box-shadow: 0 0 4px #000000; }
