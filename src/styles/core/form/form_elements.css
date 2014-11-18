@@ -630,15 +630,12 @@ button.fullwidth,
 a.button.fullwidth,
 input.fullwidth,
 select.fullwidth,
-textarea.fullwidth {
-    text-align: center;
+textarea.fullwidth {  
     width: 100%;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
 }
 button.fullwidth,
 a.button.fullwidth {
+    text-align: center;
     padding-left: 0!important;
     padding-right: 0!important;
 }
