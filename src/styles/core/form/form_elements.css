@@ -74,9 +74,6 @@ textarea:disabled{
     color:#9ba8b1;
     background-color:#edf0f1;
 }
-input[type="search"] {
-    -webkit-appearance: none;
-}
 input[type=checkbox],
 input[type=radio] {
     cursor: pointer;
@@ -95,14 +92,14 @@ input[type=file] {
 }
 /* eksperimentel søkeicon i søkefelt :sn */
 input[type="search"]{
-    background:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMTkuNSAxMTkuNSA2MiA2MiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAxOS41IDExOS41IDYyIDYyIj48cGF0aCBkPSJNNjUuNzk5IDE0Ni4wODNjMC0xMC44MjMtOC43NzctMTkuNjAxLTE5LjYxNS0xOS42MDEtMTAuODMgMC0xOS42MTQgOC43NzctMTkuNjE0IDE5LjYwMSAwIDEwLjgzOSA4Ljc4NCAxOS42MTYgMTkuNjE0IDE5LjYxNiAxMC44MzcgMCAxOS42MTUtOC43NzcgMTkuNjE1LTE5LjYxNnoiIGZpbGw9Im5vbmUiLz48cGF0aCBmaWxsPSIjOWJhOGIxIiBkPSJNODAuOTgyIDE3NS44MThsLTEzLjkyLTEzLjkyNGMzLjMzNi00LjM5MyA1LjMxNi05Ljg2NyA1LjMxNi0xNS44MTIgMC0xNC40NTctMTEuNzI1LTI2LjE3Ny0yNi4xOTUtMjYuMTc3LTE0LjQ1NyAwLTI2LjE4NCAxMS43Mi0yNi4xODQgMjYuMTc3IDAgMTQuNDcyIDExLjcyNyAyNi4xOTYgMjYuMTg0IDI2LjE5NiA1LjkyOSAwIDExLjQwOC0xLjk4MyAxNS43OTQtNS4zMDdsMTMuOTI0IDEzLjkyMiA1LjA4MS01LjA3NXptLTU0LjQxMi0yOS43MzVjMC0xMC44MjMgOC43ODQtMTkuNjAxIDE5LjYxNC0xOS42MDEgMTAuODM1IDAgMTkuNjE1IDguNzc3IDE5LjYxNSAxOS42MDEgMCAxMC44MzktOC43NzcgMTkuNjE2LTE5LjYxNSAxOS42MTYtMTAuODMgMC0xOS42MTQtOC43NzctMTkuNjE0LTE5LjYxNnoiLz48L3N2Zz4=);
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMTkuNSAxMTkuNSA2MiA2MiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAxOS41IDExOS41IDYyIDYyIj48cGF0aCBkPSJNNjUuNzk5IDE0Ni4wODNjMC0xMC44MjMtOC43NzctMTkuNjAxLTE5LjYxNS0xOS42MDEtMTAuODMgMC0xOS42MTQgOC43NzctMTkuNjE0IDE5LjYwMSAwIDEwLjgzOSA4Ljc4NCAxOS42MTYgMTkuNjE0IDE5LjYxNiAxMC44MzcgMCAxOS42MTUtOC43NzcgMTkuNjE1LTE5LjYxNnoiIGZpbGw9Im5vbmUiLz48cGF0aCBmaWxsPSIjOWJhOGIxIiBkPSJNODAuOTgyIDE3NS44MThsLTEzLjkyLTEzLjkyNGMzLjMzNi00LjM5MyA1LjMxNi05Ljg2NyA1LjMxNi0xNS44MTIgMC0xNC40NTctMTEuNzI1LTI2LjE3Ny0yNi4xOTUtMjYuMTc3LTE0LjQ1NyAwLTI2LjE4NCAxMS43Mi0yNi4xODQgMjYuMTc3IDAgMTQuNDcyIDExLjcyNyAyNi4xOTYgMjYuMTg0IDI2LjE5NiA1LjkyOSAwIDExLjQwOC0xLjk4MyAxNS43OTQtNS4zMDdsMTMuOTI0IDEzLjkyMiA1LjA4MS01LjA3NXptLTU0LjQxMi0yOS43MzVjMC0xMC44MjMgOC43ODQtMTkuNjAxIDE5LjYxNC0xOS42MDEgMTAuODM1IDAgMTkuNjE1IDguNzc3IDE5LjYxNSAxOS42MDEgMCAxMC44MzktOC43NzcgMTkuNjE2LTE5LjYxNSAxOS42MTYtMTAuODMgMC0xOS42MTQtOC43NzctMTkuNjE0LTE5LjYxNnoiLz48L3N2Zz4=);
     background-position: 10px center;
     background-repeat: no-repeat;
     text-indent: 20px;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 2s;
-    transition: all 0.2s;
-    fill: #94d31b;
+    -webkit-transition: text-indent 0.2s, box-shadow 0.2s;
+    -moz-transition: text-indent 0.2s, box-shadow 0.2s;
+    transition: text-indent 0.2s, box-shadow 0.2s;
+    -webkit-appearance: none;
 }
 
 input[type="search"]:focus {
