@@ -128,8 +128,8 @@
     height: 1px;
     overflow: hidden;
     position: absolute;
-    top: -10px;
     width: 1px;
+    left: -9000px;
 }
 .width-auto{
     width:auto;
