@@ -26,9 +26,10 @@ When releasing you must specify how to bump the version number. Please consult t
 	$ ./node_modules/.bin/gulp
 	$ npm publish .
 	# Ensure the tags are pushed too
+	$ git push origin <branch name>
 	$ git push --tags origin <branch name>
 
-	# if you need legacy deployments, run the following
+	# Finn internal deploy
 	$ node legacyDeploy.js false | true
 
 ## Legacy browser support
