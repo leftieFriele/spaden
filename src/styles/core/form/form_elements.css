@@ -630,7 +630,10 @@ a.button.fullwidth {
 
 input.large,
 button.large,
-a.button.large {
+a.button.large,
+input.large:hover,
+button.large:hover,
+a.button.large:hover {
     font-size: 20px;
     padding-top:10px;
     padding-bottom: 10px;
