@@ -201,4 +201,6 @@
     opacity: 1;
     z-index: 5;
 }
-
+.toolbar-element-mark{
+    font-weight:bold;
+}
