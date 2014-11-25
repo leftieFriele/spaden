@@ -19,12 +19,16 @@
     .nav-level1 { width: 100%; }
     .nav-level1 span { font-size: 10px; }
     .nav-level2 .scroll { overflow-y: scroll; -webkit-overflow-scrolling: touch; height: 85%; height: calc(100% - 60px); }
-    .hamburger .nav-level1:before { content: "\2630"; color:#fff; display: inline-block; float: right; padding: 10px; padding: 0 10px; font-size: 30px; height: 55px; line-height: 55px; cursor: pointer; }
-    .hamburger .nav-level1 { display: block; }
+    .hamburger .nav-level1 a { border-right: 0; }
     .hamburger .nav-level1 span { font-size: 14px; }
-    .hamburger .topbar-nav-svg img, .hamburger br { display: none; }
-    .hamburger .nav-element { display: none; padding: 10px; background: #4cb7ff; box-shadow: inset 0 1px 0 0 rgba(0,0,0,.1); }
-    .hamburger:hover .nav-element, .hamburger:active .nav-element, .hamburger:focus .nav-element { display: block; }
+    .hamburger .topbar-nav-svg img { display: none; }
+    .hamburger .homelink { height: 55px; line-height: 55px; }
+    .hamburger .nav-element { display: none; padding: 10px; background: #4cb7ff; border-top: 1px solid #07e; float: left; width: calc(100% - 2px); }
+    .hamburger .nav-level1,
+    .hamburger:hover .nav-level1 a,
+    .hamburger:focus .nav-level1 a,
+    .hamburger:active .nav-level1 a { display: block; }
+    .hamburger .nav-level1:before { content: "\2630"; color:#fff; display: inline-block; float: right; padding: 10px; padding: 0 10px; font-size: 30px; height: 55px; line-height: 55px; cursor: pointer; }
 }
 @media screen and (min-width: 768px) {
 	.nav-level1 a { height: 55px; padding-left: 20px; padding-right: 20px; }
