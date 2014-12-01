@@ -44,10 +44,6 @@ When releasing you must specify how to bump the version number. Please consult t
 	<link rel="stylesheet" href="styles/ie.css">
  	<![endif]-->
 
-## Make print outs awesome
-
-	<link rel="stylesheet" media="print" href="styles/print.css">
-
 ## Contributing?
 
 Check out our [contribution guidelines](contributing.md) for the most efficient way to contribute.
