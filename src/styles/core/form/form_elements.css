@@ -90,9 +90,9 @@ input[type="search"]{
     background-position: 10px center;
     background-repeat: no-repeat;
     text-indent: 20px;
-    -webkit-transition: text-indent 0.2s, box-shadow 0.2s;
-    -moz-transition: text-indent 0.2s, box-shadow 0.2s;
-    transition: text-indent 0.2s, box-shadow 0.2s;
+    -webkit-transition: text-indent 0.2s, box-shadow 0.2s, background-position 0.2s;
+    -moz-transition: text-indent 0.2s, box-shadow 0.2s, background-position 0.2s;
+    transition: text-indent 0.2s, box-shadow 0.2s, background-position 0.2s;
     -webkit-appearance: none;
 }
 
