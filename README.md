@@ -24,7 +24,7 @@ When releasing you must specify how to bump the version number. Please consult t
 
 	$ npm version [patch | minor | major]
 	$ ./node_modules/.bin/gulp
-	$ npm publish .
+	$ npm publish . --registry https://registry.npmjs.org
 	# Ensure the tags are pushed too
 	$ git push origin <branch name>
 	$ git push --tags origin <branch name>
