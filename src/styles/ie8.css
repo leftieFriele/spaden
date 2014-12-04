@@ -95,3 +95,4 @@ dt, dd { margin: 0 20px; }
 .homelink { position: relative; }
 .topbar-nav-svg-home:before { content: url("/img/finn-logo.png"); position: absolute; top: 10px; left: 0; }
 .topbar-nav-svg-home { padding-left: 116px; }
+.topbar-level2.fixed + .container { margin-top: 110px; }
