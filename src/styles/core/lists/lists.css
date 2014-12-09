@@ -100,6 +100,18 @@ dl.compact dd {
 .dl-bordered dd:first-of-type, .ul-bordered li:first-of-type {
     border: none;
 }
+.dl-compressed{
+    clear:both;
+}
+.dl-compressed dd,.dl-compressed dt{
+    float:left;
+    margin:0;
+}
+.dl-compressed dt {
+    color: #9BA8B1;
+    clear:both;
+    padding-right:10px;
+}
 
 @media screen and (min-width:768px) {
     .multicol dt { margin: 0 10px 0 20px; }
