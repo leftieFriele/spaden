@@ -34,6 +34,11 @@
 	.nav-level1 a { height: 55px; padding-left: 20px; padding-right: 20px; }
 	.topbar-nav-svg img, .topbar-nav-svg-home { margin-right: 5px; }
     .topbar-nav-svg-home img { max-width: 106px; } /* IE */
+
+    .sitenav .nav-level1 { width: 100%; }
+    .sitenav .homelink { width: 35%; }
+    .sitenav .nav-level1 a { padding-left: 0; padding-right: 0; }
+    .sitenav .page { padding-right: 10px; }
 }
 @media screen and (max-width:470px) {
     .homelink { padding-left: 5px!important; padding-right: 5px; width: 80px; }
