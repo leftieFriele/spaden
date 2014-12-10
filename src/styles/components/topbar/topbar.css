@@ -19,6 +19,7 @@
     .nav-level1 { width: 100%; }
     .nav-level1 span { font-size: 10px; }
     .nav-level2 .scroll { overflow-y: scroll; -webkit-overflow-scrolling: touch; height: 85%; height: calc(100% - 60px); }
+    .sitenav .nav-element { width: 17%; }
     .hamburger .nav-level1 a { border-right: 0; }
     .hamburger .nav-level1 span { font-size: 14px; }
     .hamburger .topbar-nav-svg img { display: none; }
@@ -34,7 +35,6 @@
 	.nav-level1 a { height: 55px; padding-left: 20px; padding-right: 20px; }
 	.topbar-nav-svg img, .topbar-nav-svg-home { margin-right: 5px; }
     .topbar-nav-svg-home img { max-width: 106px; } /* IE */
-
     .sitenav .nav-level1 { width: 100%; }
     .sitenav .homelink { width: 35%; }
     .sitenav .nav-level1 a { padding-left: 0; padding-right: 0; }
