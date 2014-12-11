@@ -15,7 +15,7 @@ body, html {
 .container.fullsize { max-width: 100%; }
  /* wraps other template elems to set width */ /* text-align IE5.5 */
 
-.liquid{width:auto;margin:0;}
+.liquid, .liquid .page {max-width: none!important;}
 /* ====== Columns ====== */
 .leftCol{float:left;width:330px;_margin-right:-3px;}
 .rightCol{float:right;width:330px;_margin-left:-3px;}
