@@ -96,3 +96,10 @@ dt, dd { margin: 0 20px; }
 .topbar-nav-svg-home:before { content: url("/img/finn-logo.png"); position: absolute; top: 10px; left: 0; }
 .topbar-nav-svg-home { padding-left: 116px; }
 .topbar-level2.fixed + .container { margin-top: 110px; }
+
+.rating-stars {background: url('/img/ratings/rating-stars.png') no-repeat 0 -32px;}
+.rating-stars .stars {background: url('/img/ratings/rating-stars.png') no-repeat 0 0;}
+.rating-stars.small-stars {background: url('/img/ratings/rating-stars-small.png') no-repeat 0 -18px;}
+.rating-stars.small-stars .stars {background: url('/img/ratings/rating-stars-small.png') no-repeat 0 0;}
+.rating-stars.large-stars {background: url('/img/ratings/rating-stars-large.png') no-repeat 0 -91px;}
+.rating-stars.large-stars .stars {background: url('/img/ratings/rating-stars-large.png') no-repeat 0 0;}
