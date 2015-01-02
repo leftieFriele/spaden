@@ -44,6 +44,28 @@ When releasing you must specify how to bump the version number. Please consult t
 	<link rel="stylesheet" href="styles/ie.css">
  	<![endif]-->
 
+
+## Using Spaden from Node.js/Express
+
+Install Spaden via npm
+
+	$ npm install spaden --save
+
+
+Serve Spaden assets
+
+```javascript
+var app = express();
+app.use('/spaden', express.static(path.join(__dirname, 'node_modules', 'spaden', 'src')));
+```
+
+Import stylesheets
+
+```html
+<link rel="stylesheet" href="/spaden/styles/core/core.css"/>
+<link rel="stylesheet" media="screen" href="/spaden/styles/components/components.css">
+```
+
 ## Contributing?
 
 Check out our [contribution guidelines](contributing.md) for the most efficient way to contribute.
