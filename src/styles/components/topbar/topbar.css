@@ -13,7 +13,6 @@
 .topbar-level2.fixed + .page { margin-top: 110px; }
 @media screen and (max-width:767px) {
     .homelink { padding-left: 10px!important; padding-right: 10px; width: 80px; }
-    .topbar-nav-svg-home img { max-height: 19px; } /* IE */
     .topbar-level2.open, .topbar-level2.open .inner, .topbar-level2.open .bd, .topbar-level2.open .nav-level2 { height: 100%; }
     .topbar-nav-svg-caption { display: block; }
     .nav-level1 { width: 100%; }
@@ -34,7 +33,6 @@
 @media screen and (min-width: 768px) {
 	.nav-level1 a { height: 55px; padding-left: 20px; padding-right: 20px; }
 	.topbar-nav-svg img, .topbar-nav-svg-home { margin-right: 5px; }
-    .topbar-nav-svg-home img { max-width: 106px; } /* IE */
     .sitenav .nav-level1 { width: 100%; }
     .sitenav .homelink { width: 35%; }
     .sitenav .nav-level1 a { padding-left: 0; padding-right: 0; }
@@ -42,5 +40,4 @@
 }
 @media screen and (max-width:470px) {
     .homelink { padding-left: 5px!important; padding-right: 5px; width: 80px; }
-    .topbar-nav-svg-home img { max-height: 22px; } /* IE */
 }
