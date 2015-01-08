@@ -49,6 +49,7 @@ textarea:disabled{
 }
 input[type=checkbox],
 input[type=radio] {
+    font-size:16px; /* Should prob. be sized in a different way, this is a quickfix */
     cursor: pointer;
     width: auto;
     height: auto;
@@ -329,119 +330,9 @@ button:disabled {
 }
 
 
-/* Fancypants */
-/*----- Custom input type file -----*/
-/*
-input[type="file"]{
-  height: 34px;
-  padding: 5px 0;
-  width: 100%;
-  border: 1px solid #999;
-  -webkit-border-radius:1px;
-  -moz-border-radius:1px;
-  border-radius:2px;
-  background-color: #fff;
-  color: #444;
-  border: 1px solid #999;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-*/
-
-/* Fancy radios
-.undivify input[type='radio'],
-.undivify input[type='checkbox'] {
-    opacity: 0;
-    float: left;
-    width: 18px;
-    margin-right: 0;
-}
-
-.undivify input[type='radio'] + label,
-.undivify input[type='checkbox'] + label {
-    margin: 0;
-    clear: none;
-    position:relative;
-    padding: 5px 0 4px 24px;
-    cursor: pointer;
-}
-
-.undivify input[type='checkbox'] + label:before{
-    height:16px;
-    width:16px;
-    border:1px solid #999;
-    content:'';
-    left:0px; top:4px;
-    background:#f7f7f7;
-    position:absolute;
-    pointer-events:none;
-    display:block;
-    -webkit-border-radius: 1px;
-    -moz-border-radius: 1px;
-    border-radius: 2px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.undivify input[type='radio'] + label:before{
-    height:16px;
-    width:16px;
-    border:1px solid #999;
-    border-radius: 50%;
-    content:'';
-    left:0px; top:5px;
-    background:#fff;
-    position:absolute;
-    pointer-events:none;
-    display:block;
-    overflow:hidden;
-}
-*/
-
-
-/* Fancy checks
-
-.undivify input[type='checkbox']:checked + label:after {
-    content:'';
-    height:10px;
-    width:10px;
-    background-color:#09F;
-    overflow:hidden;
-    position:absolute;
-    display:block;
-    top:7px;
-    left:3px;
-
-line-height:20px;
-}
-
-.undivify input[type='radio']:checked + label:after {
-    content:'';
-    background:#09F;
-    height:12px;
-    width:12px;
-    left:3px;top:8px;
-    position:absolute;
-    border-radius:50%;
-    overflow:hidden;
-    display:block;
-}
-
-.undivify input[type='checkbox']:focus + label:before, .undivify input[type='radio']:focus + label:before {
-    border:1px solid #09F;
-    outline: 0;
-    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
-}
-
-.undivify input[disabled='disabled'] + label{
-    opacity: 0.5;
-}
-*/
-
 /* */
+
+
 label {
     float: none;
     width: auto;
@@ -517,36 +408,6 @@ fieldset legend {
   }
 }
 
-
-/*
-@media screen and (min-width:640px) {
-
-    .hform640 fieldset{
-        padding-top: 18px;
-    }
-    .hform640 fieldset legend{
-        margin: 0;
-        padding-left:185px;
-    }
-    .hform640 .input{
-        margin-left: 185px;
-    }
-    .hform640 .formelement{
-        margin: 0 0 15px 0;
-    }
-    .hform640 .formelement > label{
-        padding-top: 3px;
-        line-height: 18px;
-        float: left;
-        width: 165px;
-        text-align: right;
-    }
-    .hform640 .actions{
-        padding-left:185px;
-    }
-}
-
-*/
 @media screen and (min-width:640px) {
   .hform640 fieldset{
     padding-top: 18px;
@@ -698,4 +559,3 @@ select.blank{
 .custom-dropdown-blue::after { /*farge paa ned pil*/
     color: #fff;
 }
-
