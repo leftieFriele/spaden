@@ -8,6 +8,7 @@ a.button{
   color:#444;
 }
 
+input:not([type]),
 input[type="text"],
 input[type="password"],
 input[type="url"],
@@ -35,6 +36,7 @@ select{
   height:2.5em;
 }
 
+input:not([type]):disabled,
 input[type="text"]:disabled,
 input[type="password"]:disabled,
 input[type="url"]:disabled,
@@ -91,6 +93,7 @@ textarea {
 }
 
 /* Input behavior */
+input:not([type]),
 input[type="text"],
 input[type="password"],
 input[type="url"],
@@ -104,6 +107,8 @@ textarea {
     transition: border linear 0.2s, box-shadow linear 0.2s;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
+
+input:not([type]):focus,
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="url"]:focus,
@@ -306,6 +311,7 @@ button:disabled {
 
 /* Input responsive */
 @media screen and (min-width:768px) {
+  input:not([type]),
   input[type="text"],
   input[type="password"],
   input[type="url"],
