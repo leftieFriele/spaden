@@ -5,6 +5,7 @@ button,
 a.icon,
 a.button{
   font: inherit;
+  font-size: 16px; /* This avoids zooming on iOS */
   color:#444;
 }
 
@@ -29,7 +30,6 @@ textarea{
   border-radius:2px;
   outline: none;
   line-height: 1.25em;
-  font-size: 16px; /* This avoids zooming on iOS */
 }
 
 select{
@@ -52,7 +52,6 @@ textarea:disabled{
 }
 input[type=checkbox],
 input[type=radio] {
-    font-size:16px; /* Quickfix for bigger radio/checks... Should be sized properly and also support the custom graphic ones. */
     cursor: pointer;
     width: auto;
     height: auto;
