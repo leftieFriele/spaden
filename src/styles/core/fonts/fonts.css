@@ -68,6 +68,14 @@ h1,h2,h3,h4{font-weight:300;}/*firefox translates normal to 400 other browsers 3
 	.largetext { font-size: 14px; }
 }
 
+.fixedfontsize.b1 { font-size: 14px; }
+.fixedfontsize.d1 { font-size: 12px; }
+.fixedfontsize.d2 { font-size: 10px; }
+.fixedfontsize.t1 { font-size: 35px; }
+.fixedfontsize.t2 { font-size: 25px; }
+.fixedfontsize.t3 { font-size: 20px; }
+.fixedfontsize.t4 { font-size: 16px; }
+
 /* Fix for webscript subscript + superscript alignment bug */
 sup,sub{line-height:1em;}
 
