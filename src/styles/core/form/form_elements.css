@@ -240,13 +240,13 @@ a.button.order{
 input:not([disabled]).order:hover,
 button:not([disabled]).order:hover,
 a.icon.order:hover,
-a.button.order:hover{
+a.button.order:not(.disabled):hover {
     background:#fe8d08;
 }
 input:not([disabled]).order:active,
 button:not([disabled]).order:active,
 a.icon.order:active,
-a.button.order:active{
+a.button.order:not(.disabled):active {
     background:#e78007;
 }
 input.primary,
@@ -264,20 +264,21 @@ a.button.primary{
 input:not([disabled]).primary:hover,
 button:not([disabled]).primary:hover,
 a.icon.primary:hover,
-a.button.primary:hover{
+a.button.primary:not(.disabled):hover {
     background: #0099ff;
 }
 input:not([disabled]).primary:active,
 button:not([disabled]).primary:active,
 a.icon.primary:active,
-a.button.primary:active{
+a.button.primary:not(.disabled):active {
     background: #0077ee;
 }
 
 input:disabled[type=button],
 input:disabled[type=submit],
 input:disabled[type=reset],
-button:disabled {
+button:disabled,
+a.button.disabled {
     border:1px solid #e2e6e9;
     background: #e2e6e9;
     color:#9ba8b1;
