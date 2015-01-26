@@ -34,7 +34,7 @@
     .sitenav .homelink { width: 35%; }
     .sitenav .nav-level1 a { padding-left: 0; padding-right: 0; }
     .sitenav .page { padding-right: 10px; }
-    .hamburger-menu .nav-trigger { display: none; }
+    .hamburger-menu .nav-trigger, .hamburger-menu label[for="nav-trigger"] { display: none; }
 }
 @media screen and (max-width:470px) {
     .homelink { padding-left: 5px!important; padding-right: 5px; width: 80px; }
