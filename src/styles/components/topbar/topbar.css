@@ -24,10 +24,10 @@
     .hamburger .topbar-nav-svg img { display: none; }
     .hamburger .homelink { height: 55px; line-height: 55px; }
     .hamburger .nav-element { display: none; padding: 10px; background: #4cb7ff; border-top: 1px solid #07e; float: left; width: calc(100% - 2px); }
-    .hamburger .nav-level1,
     .hamburger:hover .nav-level1 a,
+    .hamburger:active .nav-level1 a,
     .hamburger:focus .nav-level1 a,
-    .hamburger:active .nav-level1 a { display: block; }
+    .hamburger .nav-level1 { display: block; }
     .hamburger .nav-level1:before { content: "\2630"; color:#fff; display: inline-block; float: right; padding: 10px; padding: 0 10px; font-size: 30px; height: 55px; line-height: 55px; cursor: pointer; }
 }
 @media screen and (min-width: 768px) {
