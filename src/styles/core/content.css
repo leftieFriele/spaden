@@ -145,7 +145,6 @@
         background-color: #aaa;
     }
     .fixedfilters .scrollbar { max-height: 600px; margin-right: 5px; overflow-y: scroll; -webkit-overflow-scrolling: touch; }
-    .modal-content { max-height: 500px; }
 }
 
 @media screen and (max-width: 767px) {
@@ -200,7 +199,4 @@
 .skiplink:focus {
     opacity: 1;
     z-index: 5;
-}
-.toolbar-element-mark{
-    font-weight:bold;
 }
