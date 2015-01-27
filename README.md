@@ -23,11 +23,9 @@ The built artifacts reside in the _/dist_ folder in the current directory.
 When releasing you must specify how to bump the version number. Please consult the [semver standard](http://semver.org/) if you're not certain which to choose:
 
 	$ npm version [patch | minor | major]
-	$ ./node_modules/.bin/gulp
+	$ npm run package
 	$ npm publish . --registry https://registry.npmjs.org
-	# Ensure the tags are pushed too
-	$ git push origin <branch name>
-	$ git push --tags origin <branch name>
+	$ git push --follow-tags origin master
 
 	# Finn internal deploy
 	$ node legacyDeploy.js false | true
@@ -63,7 +61,7 @@ Import stylesheets
 
 ```html
 <link rel="stylesheet" href="/spaden/styles/core/core.css"/>
-<link rel="stylesheet" media="screen" href="/spaden/styles/components/components.css">
+<link rel="stylesheet" href="/spaden/styles/components/components.css">
 ```
 
 ## Contributing?
