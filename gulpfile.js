@@ -4,7 +4,7 @@ var gzip = require('gulp-gzip');
 var minifyCSS = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var replace = require('gulp-replace');
-var rimraf = require('gulp-rimraf');
+var del = require('del');
 var tar = require('gulp-tar');
 var util = require('gulp-util');
 var pkg = require('./package');
@@ -13,15 +13,8 @@ var distDir = './dist/';
 var buildDir = './src/styles/';
 var destinationDir = distDir + pkg.name + '-' + pkg.version;
 
-gulp.task('clean', function() {
-    return gulp.src([
-            distDir
-        ], {
-            read: false
-        })
-        .pipe(rimraf({
-            force: true
-        }));
+gulp.task('clean', function(cb) {
+    del(distDir, cb);
 });
 
 gulp.task('copy-images-to-dist', ['clean'], function() {
@@ -34,11 +27,7 @@ gulp.task('copy-images-to-dist', ['clean'], function() {
         .pipe(gulp.dest(destinationDir));
 });
 
-gulp.task('sass', ['copy-images-to-dist'], function() {
-    // add SASS support....
-});
-
-gulp.task('build-so-css', ['sass'], function() {
+gulp.task('build-so-css', ['copy-images-to-dist'], function() {
     return gulp.src([
             buildDir + '/core/core.css',
             buildDir + '/components/components.css'
@@ -59,7 +48,7 @@ gulp.task('build-so-css', ['sass'], function() {
         .pipe(gulp.dest(destinationDir + '/styles/'))
 });
 
-gulp.task('build-ie-css', ['sass'], function(){
+gulp.task('build-ie-css', ['copy-images-to-dist'], function(){
     gulp.src(buildDir + '/ie*.*')
         .pipe(minifyCSS({
             keepBreaks: false,
@@ -71,7 +60,7 @@ gulp.task('build-ie-css', ['sass'], function(){
         }))
         .pipe(gulp.dest(destinationDir + '/styles/'))
 })
-gulp.task('build-legacy-css', ['sass'], function() {
+gulp.task('build-legacy-css', ['copy-images-to-dist'], function() {
     gulp.src(buildDir + '/legacy/**')
         .pipe(concat('legacy.css'))
         .pipe(gulp.dest(destinationDir + '/styles/'))
@@ -126,7 +115,6 @@ gulp.on('err', function(e) {
 gulp.task('default', [
     'copy-images-to-dist',
     'replace-imgpaths',
-    'sass',
     'build-so-css',
     'build-legacy-css',
     'build-ie-css',
