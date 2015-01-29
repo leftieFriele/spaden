@@ -1,7 +1,7 @@
 {
   "name": "spaden",
   "version": "1.0.4",
-  "description": "The Finn.no front-end CSS framework built on top of OOCSS",
+  "description": "The FINN.no front-end CSS framework built on top of OOCSS",
   "scripts": {
     "package": "./node_modules/.bin/gulp"
   },
