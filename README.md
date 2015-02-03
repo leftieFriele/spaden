@@ -34,21 +34,29 @@ When releasing you must specify how to bump the version number. Please consult t
 
 	<!--[if IE 9]>
 	<link rel="stylesheet" href="styles/ie9.css">
- 	<![endif]-->
+	<![endif]-->
 	<!--[if IE 8]>
 	<link rel="stylesheet" href="styles/ie8.css">
- 	<![endif]-->
- 	<!--[if lte IE 8]>
+	<![endif]-->
+	<!--[if lte IE 8]>
 	<link rel="stylesheet" href="styles/ie.css">
- 	<![endif]-->
+	<![endif]-->
 
+## Local development
+
+	$ npm start
+
+```html
+<link rel="stylesheet" href="http://localhost:3000/">
+```
+
+This includes core.css and components.css
 
 ## Using Spaden from Node.js/Express
 
 Install Spaden via npm
 
 	$ npm install spaden --save
-
 
 Serve Spaden assets
 
@@ -60,7 +68,7 @@ app.use('/spaden', express.static(path.join(__dirname, 'node_modules', 'spaden',
 Import stylesheets
 
 ```html
-<link rel="stylesheet" href="/spaden/styles/core/core.css"/>
+<link rel="stylesheet" href="/spaden/styles/core/core.css">
 <link rel="stylesheet" href="/spaden/styles/components/components.css">
 ```
 
