@@ -1,0 +1,51 @@
+@media (max-width: 767px) {
+    .filters {
+        padding-top: 10px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .filters-overlay {
+        position: fixed;
+        z-index: 2;
+        top: 55px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, .95);
+        /* 120% instead of 100%, otherwise things show up at the bottom when the chrome disappears when scrolling in some browsers. */
+        -webkit-transform: translate3d(0, 120%, 0);
+        transform: translate3d(0, 120%, 0);
+        /* Since translateY is 120%, we make this transition slightly slower, to give the impression that they are approximately equally fast both up and down. */
+        -webkit-transition: -webkit-transform 0.3s;
+        transition: transform 0.3s;
+    }
+
+    .filters-overlay-active {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transition: -webkit-transform 0.2s;
+        transition: transform 0.2s;
+    }
+}
+
+@media (min-width: 768px) {
+    .filters {
+        top: 0;
+    }
+
+    .filters-overlay {
+        position: absolute;
+        top: 105px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 300px;
+    }
+}
+
+@media (min-width: 900px) {
+    .filters-overlay {
+        width: 340px;
+    }
+}

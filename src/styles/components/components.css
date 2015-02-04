@@ -19,3 +19,5 @@
 @import url("conversations/conversations.css");
 @import url("detailssummary/detailssummary.css");
 @import url("notification/notification.css");
+@import url("filters/filters.css");
+@import url("modal/new-modal.css");
