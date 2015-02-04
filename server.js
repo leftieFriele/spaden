@@ -3,6 +3,10 @@ var path = require("path");
 
 var app = express();
 
+app.all("*", function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  next();
+});
 app.use(express.static(path.join(__dirname, "src")));
 app.get("/", function(req, res) {
   res.set("Content-Type", "text/css");
