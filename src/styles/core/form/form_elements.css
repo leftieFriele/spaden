@@ -568,3 +568,27 @@ select.blank{
     color: #fff;
 }
 
+
+/* File input with button overlaid from m.skeleton */
+.file-input-button {
+    position: relative;
+
+}
+
+.file-input-button input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    cursor: pointer;
+}
+
+.file-input-button ::-webkit-file-upload-button {
+    cursor: pointer;
+}
