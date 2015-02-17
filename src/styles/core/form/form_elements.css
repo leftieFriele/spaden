@@ -592,3 +592,25 @@ select.blank{
 .file-input-button ::-webkit-file-upload-button {
     cursor: pointer;
 }
+
+.detailtest details summary {
+  height: 18px;
+  line-height: 18px;
+}
+.detailtest details summary:before {
+  content: "+ ";
+  display: inline-block;
+  width: 12px;
+  height: 18px;
+  line-height: 18px;
+  font-size: 18px;
+}
+.detailtest details summary::-webkit-details-marker {
+  display: none;
+}
+.detailtest details[open] summary label {
+  color: #4F6676;
+}
+.detailtest details[open] summary:before {
+  content: "- ";
+}
