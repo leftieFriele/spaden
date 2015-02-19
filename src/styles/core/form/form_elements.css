@@ -410,7 +410,7 @@ fieldset legend {
     margin-right: -10px;
     max-width: none;
   }
-  .hform640 .formelement>label{
+  .hform640 .formelement>label, .hform640 .formelement>details label{
     xpadding-top: 5px;
     float: left;
     width: 25%;
@@ -566,30 +566,25 @@ select.blank{
     filter: alpha(opacity=0);
     opacity: 0;
     cursor: pointer;
+    pointer-events: auto;
 }
 
 .file-input-button ::-webkit-file-upload-button {
     cursor: pointer;
 }
 
-.detailtest details summary {
-  height: 18px;
-  line-height: 18px;
+.formelement details summary {
+  line-height: 1.5em;
 }
-.detailtest details summary:before {
+.formelement details summary:before {
   content: "+ ";
-  display: inline-block;
-  width: 12px;
-  height: 18px;
-  line-height: 18px;
-  font-size: 18px;
+  display: block;
+  float: left;
+  width: .8em;
+  line-height: .95em;
+  font-size: 1.6em;
+  font-family: Arial, sans-serif;
 }
-.detailtest details summary::-webkit-details-marker {
+.formelement details summary::-webkit-details-marker, .formelement details[open] summary {
   display: none;
-}
-.detailtest details[open] summary label {
-  color: #4F6676;
-}
-.detailtest details[open] summary:before {
-  content: "- ";
 }
