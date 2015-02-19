@@ -48,7 +48,7 @@
 .popover-content.bg-snotgreen:before { background-color: #d2e286; }
 .popover-content.bg-pissyellow:before { background-color: #ffff99; }
 
-.tooltip { position: relative; }
+/* .tooltip { position: relative; display: inherit; }
 .tooltip[alt]:hover:before {
     content: attr(alt);
     position: absolute;
@@ -71,4 +71,4 @@
     border-right: 6px solid transparent;
     border-left: 6px solid transparent;
     border-top: 6px solid #4f6676;
-}
+} */
