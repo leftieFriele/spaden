@@ -94,8 +94,6 @@ a.neutral { color: #666!important; }
 a > .neutral:hover,
 a:hover > .neutral { text-decoration: underline; }
 
-:focus { outline: none; }
-
 /* navigational links, visited on */
 a.userhistory:visited, .userhistory a:visited { color:#9ba8b1; }
 a.userhistory:visited:hover, .userhistory a:visited:hover {   }
