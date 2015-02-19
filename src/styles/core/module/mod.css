@@ -40,13 +40,13 @@ a.mod{
     display: block;
 }
 
-.mod.shadow-top > .inner {
-    box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.07);
-}
 .foot > .mod .inner {
 	border-radius: 0 ;
 }
+
+/* fix så høyrekolonner ikke får 30px marg til høyre, i bruk på objektsider */
 .last-col > .mod { margin-right:0!important;}
+
 @media screen and (min-width:768px) {
     .mod{margin:0 10px 10px 0 !important}
     .mod.shadow > .inner {
