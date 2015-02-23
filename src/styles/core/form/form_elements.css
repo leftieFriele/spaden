@@ -553,7 +553,6 @@ select.blank{
     position: relative;
 
 }
-
 .file-input-button input {
     position: absolute;
     top: 0;
@@ -568,7 +567,6 @@ select.blank{
     cursor: pointer;
     pointer-events: auto;
 }
-
 .file-input-button ::-webkit-file-upload-button {
     cursor: pointer;
 }
@@ -587,4 +585,23 @@ select.blank{
 }
 .formelement details summary::-webkit-details-marker, .formelement details[open] summary {
   display: none;
+}
+
+.fancyselect {
+  position: relative;
+}
+.fancyselect::before {
+  content: "\25BC";
+  display: block;
+  color: #fff;
+  background-color: #0086F5;
+  position: absolute;
+  right: 0;
+  width: 2.1em;
+  text-align: center;
+  height: 100%;
+  line-height: 2em;
+  font-size: 1.3em;
+  pointer-events: none;
+  border-radius: 0 2px 2px 0;
 }
