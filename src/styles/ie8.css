@@ -103,3 +103,6 @@ dt, dd { margin: 0 20px; }
 .rating-stars.small-stars .stars {background: url('/img/ratings/rating-stars-small.png') no-repeat 0 0;}
 .rating-stars.large-stars {background: url('/img/ratings/rating-stars-large.png') no-repeat 0 -91px;}
 .rating-stars.large-stars .stars {background: url('/img/ratings/rating-stars-large.png') no-repeat 0 0;}
+
+.expandlabel { display: none; }
+.expandfields ~ .formelement { display:block; }
