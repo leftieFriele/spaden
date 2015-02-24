@@ -600,13 +600,18 @@ select.blank{
   width: 2.1em;
   text-align: center;
   height: 100%;
-  line-height: 2em;
+  line-height: 2.6em;
   font-size: 1.3em;
   pointer-events: none;
   border-radius: 0 2px 2px 0;
 }
+@media screen and (min-width:768px) {
+  .fancyselect::before { line-height: 2em; }
+}
 
 .expandlabel { line-height: 1.5em; }
+.expandfields { opacity: 0; float: right; }
+.expandfields:focus + .expandlabel { text-decoration: underline; }
 .expandlabel:before {
   content: "+ ";
   display: block;
