@@ -328,7 +328,7 @@ a.button:not(.disabled):focus{
   }
 }
 
-label {
+label, legend {
     float: none;
     width: auto;
     text-align: left;
@@ -361,16 +361,6 @@ label {
 
 
 /* Layout */
-fieldset{
-  margin-top:20px;
-}
-fieldset legend {
-  font-size: 30px;
-  font-style: normal;
-  line-height: 1.25em;
-  margin:10px;
-  color:#666;
-}
 .formelement, .actions {
   margin:10px;
   zoom: 1;
@@ -389,16 +379,10 @@ fieldset legend {
   .hform640 .formelement,.hform640 .actions{
     margin:10px 0px;
   }
-  .hform640 fieldset legend{
-    margin:10px 0px;
-  }
 }
 
 @media screen and (min-width:768px) {
   .formelement,.actions{
-    margin:10px 20px;
-  }
-  fieldset legend{
     margin:10px 20px;
   }
 }
