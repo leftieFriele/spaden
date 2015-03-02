@@ -8,6 +8,7 @@ var del = require('del');
 var tar = require('gulp-tar');
 var util = require('gulp-util');
 var pkg = require('./package');
+var inject = require('gulp-inject-string');
 
 var distDir = './dist/';
 var buildDir = './src/styles/';
@@ -16,6 +17,10 @@ var destinationDir = distDir + pkg.name + '-' + pkg.version;
 gulp.task('clean', function(cb) {
     del(distDir, cb);
 });
+
+function addVersionHeader() {
+    return inject.prepend('/* ' + pkg.version + ' - ' + Date() + ' */\n');
+}
 
 gulp.task('copy-images-to-dist', ['clean'], function() {
     return gulp.src([
@@ -38,6 +43,7 @@ gulp.task('build-so-css', ['copy-images-to-dist'], function() {
             debug: false
         }))
         .pipe(concat('spaden.css'))
+        .pipe(addVersionHeader())
         .pipe(gulp.dest(destinationDir + '/styles/'))
         .pipe(minifyCSS({
             keepBreaks: false,
@@ -45,6 +51,7 @@ gulp.task('build-so-css', ['copy-images-to-dist'], function() {
             debug: true
         }))
         .pipe(concat('spaden.min.css'))
+        .pipe(addVersionHeader())
         .pipe(gulp.dest(destinationDir + '/styles/'))
 });
 
@@ -58,8 +65,10 @@ gulp.task('build-ie-css', ['copy-images-to-dist'], function(){
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(gulp.dest(destinationDir + '/styles/'))
-})
+        .pipe(addVersionHeader())
+        .pipe(gulp.dest(destinationDir + '/styles/'));
+});
+
 gulp.task('build-legacy-css', ['copy-images-to-dist'], function() {
     gulp.src(buildDir + '/legacy/**')
         .pipe(concat('legacy.css'))
@@ -70,7 +79,8 @@ gulp.task('build-legacy-css', ['copy-images-to-dist'], function() {
             debug: false
         }))
         .pipe(concat('legacy.min.css'))
-        .pipe(gulp.dest(destinationDir + '/styles/'))
+        .pipe(addVersionHeader())
+        .pipe(gulp.dest(destinationDir + '/styles/'));
 });
 
 gulp.task('copy-bundles', ['replace-imgpaths'], function(){
