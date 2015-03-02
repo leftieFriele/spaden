@@ -125,6 +125,32 @@ a.toolbar:visited,.toolbar a:visited{color:#4f6676; text-decoration:none;}
 a.toolbar:hover,.toolbar a:hover,a.toolbar:focus,.toolbar a:focus{color:#4f6676; text-decoration:none;}
 a.toolbar:active,.toolbar a:active{color:#4f6676; text-decoration:none;}
 
+/* tagwords */
+a.tagword {
+    display: inline-block;
+    padding: 2px 4px 0 0;
+    text-transform: lowercase;
+}
+a.tagword:before{
+    content:'#';
+    color:#9BA8B1;
+}   
+a.tagword.editable:after, .editable a.tagword:after{
+    content: '\2715';
+    padding-left: 5px;
+}   
+a.tagword.editable, .editable a.tagword{
+    background-color: #4f6676;
+    border-radius: 2px;
+    padding: 4px 8px;
+    color:white;
+}
+a.tagword.editable:hover, .editable a.tagword:hover,
+a.tagword.editable:focus, .editable a.tagword:focus{
+    background-color: #7D94A4 ;
+    text-decoration:none;
+}
+
 @media (max-width: 1024px) {
     /*Prevents underline on touch/click on mobile */
     a:link, a:visited, a:hover, a:focus, a:active {

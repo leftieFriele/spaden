@@ -276,6 +276,7 @@ a.icon:focus,
 a.button:not(.disabled):focus{
     box-shadow: 0 0 6px rgba(07, 37, 60, 0.4);
     background-image: none;
+    text-decoration: none;
 }
 
 .inprogress {
