@@ -608,6 +608,9 @@ select.blank{
 .fancyselect {
   position: relative;
 }
+.fancyselect select {
+  -webkit-appearance: none;
+}
 .fancyselect::before {
   content: "\25BC";
   display: block;
