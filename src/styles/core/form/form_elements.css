@@ -632,6 +632,7 @@ select.blank{
 
 /* Fancy checkboxes */
 .fancyinput label { display: inline-block; }
+.fancyinput label.blockify { display: block; }
 .fancyinput [type="checkbox"]:not(:checked),
 .fancyinput [type="checkbox"]:checked,
 .fancyinput [type="radio"]:not(:checked),
