@@ -152,6 +152,7 @@ a.tagword.editable, .editable a.tagword{
     border-radius: 2px;
     padding: 4px 8px;
     color:white;
+    margin-top:10px;
 }
 a.tagword.editable:hover, .editable a.tagword:hover,
 a.tagword.editable:focus, .editable a.tagword:focus{
