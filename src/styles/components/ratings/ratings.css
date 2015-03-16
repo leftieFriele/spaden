@@ -23,6 +23,8 @@
 
 .rating-stars.small-stars .stars {height: 11px;}
 .rating-stars.small-stars {width: 55px;height: 11px;}
+.rating-stars.medium-stars .stars {height: 28px;}
+.rating-stars.medium-stars {width: 140px;height: 28px;}
 .rating-stars.large-stars .stars {height: 47px;}
 .rating-stars.large-stars {width: 235px;height: 47px;}
 
