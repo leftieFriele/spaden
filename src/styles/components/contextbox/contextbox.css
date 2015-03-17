@@ -1,0 +1,32 @@
+.context-box{
+	position:relative;
+}
+.context-box:before{
+	content: "";
+	position: absolute;
+	display: block;
+	width: 20px;
+	height:20px;
+	background-color: inherit;
+	transform: rotate(45deg);	
+}	
+.context-box.up:before,.context-box.down:before{
+	left:50%;
+	margin:0 -10px;
+}
+.context-box.left:before,.context-box.right:before{
+	top:50%;
+	margin:-10px 0;
+}
+.context-box.up:before{
+	top:-10px;
+}
+.context-box.down:before{
+	bottom:-10px;
+}
+.context-box.left:before{
+	left:-10px;
+}
+.context-box.right:before{
+	right:-10px;
+}
