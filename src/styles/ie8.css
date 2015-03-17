@@ -104,9 +104,10 @@ dt, dd { margin: 0 20px; }
 .rating-stars.large-stars {background: url('/img/ratings/rating-stars-large.png') no-repeat 0 -91px;}
 .rating-stars.large-stars .stars {background: url('/img/ratings/rating-stars-large.png') no-repeat 0 0;}
 
+.profiletxt .verified:after { content: " \2713"; color: green; display: inline-block; }
+
 .expandlabel { display: none; }
 .expandfields ~ .formelement { display:block; }
 
 /* tagwords */
-a.tagword.editable:after, .editable a.tagword:after{
-    content:'x';}   
+a.tagword.editable:after, .editable a.tagword:after{ content:'x'; }
