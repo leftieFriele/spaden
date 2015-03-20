@@ -9,6 +9,8 @@
 	height:20px;
 	background-color: inherit;
 	transform: rotate(45deg);	
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
 }	
 .context-box.up:before,.context-box.down:before{
 	left:50%;
