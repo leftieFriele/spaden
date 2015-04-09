@@ -1,0 +1,39 @@
+/* default links */
+a, a:link { color:#07e; text-decoration:none; }
+a:visited { color: #07e; text-decoration:none; }
+a:hover, a:focus, a:active { text-decoration:underline; }
+a:focus{outline:none;}
+a.neutral { color: #666!important; }
+a > .neutral:hover,
+a:hover > .neutral { text-decoration: underline; }
+
+/* navigational links, visited on */
+a.userhistory:visited, .userhistory a:visited { color:#9ba8b1; }
+a.userhistory:visited:hover, .userhistory a:visited:hover {   }
+
+/* high contrast font color scheme */
+a.contrast:link,.contrast a:link { color:#eee; }
+a.contrast:visited,.contrast a:visited { color:#ddd; }
+a.contrast:focus,.contrast a:hover { color:#fff; }
+a.contrast:focus,.contrast a:focus,
+a.contrast:active,.contrast a:active { background:transparent; }
+
+/* navigational links, visited on */
+a.contrast.userhistory:link,.contrast.userhistory a:link { color:#eee; }
+a.contrast.userhistory:visited,.contrast.userhistory a:visited { color:#eee; }
+a.contrast.userhistory:focus,.contrast.userhistory a:hover { color:#fff; }
+
+/* dark links */
+a.dark-links,a.dark-links:link,.dark-links a,.dark-links a:link{color:#04253c;}
+a.dark-links:visited,.dark-links a:visited{color:#04253c;}
+a.dark-links:hover,.dark-links a:hover,a.dark-links:focus,.dark-links a:focus,a.dark-links:active,.dark-links a:active{ text-decoration: underline; }
+
+/* block the link styling */
+
+a.linkblock:hover, .linkblock a:hover, a.linkblock:active, .linkblock a:active, a.linkblock:focus, .linkblock a:focus, button.blank.linkblock:hover, button.blank.linkblock:active, button.blank.linkblock:focus { text-decoration: none; }
+
+/* toolbar links */
+a.toolbar,a.toolbar:link,.toolbar a,.toolbar a:link{color:#4f6676; text-decoration:none;}
+a.toolbar:visited,.toolbar a:visited{color:#4f6676; text-decoration:none;}
+a.toolbar:hover,.toolbar a:hover,a.toolbar:focus,.toolbar a:focus{color:#4f6676; text-decoration:none;}
+a.toolbar:active,.toolbar a:active{color:#4f6676; text-decoration:none;}

@@ -1,9 +1,6 @@
 /* **************** TEMPLATE ***************** */
 /* ====== Page Head, Body, and Foot ====== */
 .main{display:table-cell;*display:block;width:auto;}
-body, html {
-    background-color:#e9eff5;
-}
 .body,.main{*zoom:1;}
 .body:after,.main:after{clear:both;display:block;visibility:hidden;overflow:hidden;height:0 !important;line-height:0;font-size:xx-large;content:" x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";}
 .page{width:auto;_text-align:left;margin-left:2px;}
@@ -12,9 +9,9 @@ body, html {
 .topbar.fixed.defaultopen + .container,
 .topbar-level2.fixed:not(.hidden) + .container { margin-top: 110px; }
 .container.fullsize { max-width: 100%; }
- 
+
 /* wraps other template elems to set width */ /* text-align IE5.5 */
-/*? 
+/*?
 .liquid, .liquid .page {max-width: none!important;} */
 /* ====== Columns ====== */
 
